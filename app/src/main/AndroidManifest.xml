@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gcart.android.indosan"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity
+            android:name="com.gcart.android.indosan.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.Province" >
+        </activity>
+
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.ServiceEksScreen" >
+        </activity>
+        
+          <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.CategoryScreen" >
+        </activity>
+
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.LoginScreen" >
+        </activity>
+
+
+
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.PaymentScreen2Eks" >
+        </activity>
+        
+         
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.PaymentScreen2Titip" >
+        </activity>
+        
+
+        
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.OrderSerian" >
+        </activity>
+        
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.OrderSerian2" >
+        </activity>
+        
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.OrderEceran" >
+        </activity>
+        
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.RegisterScreen" >
+        </activity>
+        
+
+        
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.CaraOrderScreen" >
+        </activity>
+        
+         <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.ResiList" >
+        </activity>
+        
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.ResiDetail" >
+        </activity>
+        
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.PromoList" >
+        </activity>
+        
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.HomeScreen" >
+        </activity>
+        
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.ContactScreen" >
+        </activity>
+        
+
+        
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.OrderScreen" >
+        </activity>
+         <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.ProductList" >
+        </activity>
+         <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.ProductDetail" >
+        </activity>
+         <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.PaymentScreen" >
+        </activity>
+
+         <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.PaymentScreen2" >
+        </activity>
+         <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.NotaScreen" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.NotaPaidScreen" >
+        </activity>
+
+        <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.PaymentNotaScreen" >
+        </activity>
+         <activity
+            android:label="@string/app_name"
+            android:name="com.gcart.android.indosan.PaymentHistoryNotaScreen" >
+        </activity>
+    </application>
+
+</manifest>
